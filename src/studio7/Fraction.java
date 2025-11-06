@@ -27,7 +27,7 @@ public class Fraction {
     }
 
     public Fraction divideFraction(Fraction f) {
-        Fraction newFraction = new Fraction(numerator * f.denominator, denominator * f.numerator);
+        Fraction newFraction = multiplyFraction(f.reciprocal());
         return newFraction.simplify();
     }
 
